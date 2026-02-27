@@ -3,16 +3,26 @@ package com.vothang.moneytracker.utils
 import java.text.NumberFormat
 import java.util.Locale
 
+import com.vothang.moneytracker.model.TransactionType
+
 fun Double.toVND(): String {
     val locale = Locale.forLanguageTag("vi-VN")
     val formatter = NumberFormat.getCurrencyInstance(locale)
     return formatter.format(this)
 }
 
-fun String.toTransactionTypeLabel(): String {
+/*fun String.toTransactionTypeLabel(): String {
     return when(this) {
         "income" -> "Thu nhập"
         "expense" -> "Chi tiêu"
+        else -> "Không hợp lệ!"
+    }
+}*/
+
+fun TransactionType.label() : String {
+    return when(this) {
+        TransactionType.Income -> "Thu nhập"
+        TransactionType.Expense -> "Chi tiêu"
         else -> "Không hợp lệ!"
     }
 }

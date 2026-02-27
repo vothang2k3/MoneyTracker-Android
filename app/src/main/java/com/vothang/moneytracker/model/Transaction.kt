@@ -6,5 +6,8 @@ data class Transaction (
     val type: String, // "income" or "expense"
     val category: String,
     val note: String?,
-    val date: String
+    val date: String,
+    // update
+    val imagePath: String?,
+    val categoryId: String
 )
