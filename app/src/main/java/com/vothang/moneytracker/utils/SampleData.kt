@@ -1,3 +1,4 @@
+/*
 package com.vothang.moneytracker.utils
 
 import com.vothang.moneytracker.model.Transaction
@@ -103,4 +104,4 @@ val sampleTransactions: List<Transaction> = listOf(
         note = "Đặt vé máy bay",
         date = "20/02/2026"
     )
-)
+)*/

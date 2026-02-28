@@ -7,7 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.vothang.moneytracker.R
 
-import com.vothang.moneytracker.utils.sampleTransactions
+//import com.vothang.moneytracker.utils.sampleTransactions
 import com.vothang.moneytracker.utils.toVND
 
 import android.util.Log
@@ -23,11 +23,12 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        Log.d("MoneyTrackerTest","Income = ${calculateIncome()}")
-        Log.d("MoneyTrackerTest","Income = ${calculateExpense()}")
+/*        Log.d("MoneyTrackerTest","Income = ${calculateIncome()}")
+        Log.d("MoneyTrackerTest","Income = ${calculateExpense()}")*/
     }
 }
 
+/*
 fun calculateIncome(): String {
     val transactionIncome = sampleTransactions
         .filter { transaction -> transaction.type == "income" }
@@ -39,4 +40,4 @@ fun calculateExpense(): String {
         .filter { transaction -> transaction.type == "expense" }
         .sumOf { it.amount }
         .toVND()
-}
+}*/

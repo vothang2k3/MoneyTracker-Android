@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MoneyTracker">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.SplashActivity"
             android:exported="true">
 
             <!-- Intent filter: Đánh dấu đây là Activity khởi động đầu tiên -->
@@ -25,7 +25,11 @@
             </intent-filter>
         </activity>
 
-            <!-- Khai báo thêm Activity, Service, Receiver khác ở đây -->
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true" />
+
+        <!-- Khai báo thêm Activity, Service, Receiver khác ở đây -->
 
     </application>
 
